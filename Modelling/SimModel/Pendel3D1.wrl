@@ -1,0 +1,142 @@
+#VRML V2.0 utf8
+# Created with V-Realm Builder v2.0
+# Integrated Data Systems Inc.
+# www.ids-net.com
+
+Background {
+  skyColor [
+    0.76238 0.8 0.1427,
+    0.277798 0.219779 0.7,
+    0.222549 0.390234 0.7,
+    0.60094 0.662637 0.69 
+  ]
+  skyAngle [0.1, 1.2, 1.57]
+  groundColor [
+    0 0.8 0,
+    0.174249 0.82 0.187362,
+    0.467223 0.82 0.445801,
+    0.621997 0.67 0.600279 
+  ]
+  groundAngle [0.9, 1.5, 1.57]
+}
+DEF BASE Transform {
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.0223017 0.139417 0.8
+        }
+      }
+      geometry Cylinder {
+        radius 0.4
+        height 0.1
+      }
+    }
+    DEF JOINT_BASE Transform {
+      translation 0 0.2 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.00736418 0.8 0.0388145
+            }
+          }
+          geometry Sphere {
+            radius 0.2
+          }
+        }
+        DEF JOINT_1 Transform {
+          translation 0 0.2 0
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.8 0.0310915 0.077895
+                }
+              }
+              geometry Sphere {
+                radius 0.1
+              }
+            }
+            DEF LINK_1 Transform {
+              translation 0 0.7 0
+              children [
+                Shape {
+                  appearance Appearance {
+                    material Material {
+                      diffuseColor 0.0285008 0.00384097 0.8
+                    }
+                  }
+                  geometry Cylinder {
+                    radius 0.08
+                    height 1.3
+                  }
+                }
+                DEF JOINT_2 Transform {
+                  translation 0 0.7 0
+                  children [
+                    Shape {
+                      appearance Appearance {
+                        material Material {
+                          diffuseColor 0.8 0.0136102 0.0760451
+                        }
+                      }
+                      geometry Sphere {
+                        radius 0.1
+                      }
+                    }
+                    DEF LINK_2 Transform {
+                      translation 0 0.16 0
+                      children [
+                        Shape {
+                          appearance Appearance {
+                            material Material {
+                              diffuseColor 0.00384097 0.59484 0.8
+                            }
+                          }
+                          geometry Cylinder {
+                            radius 0.08
+                            height 0.2
+                          }
+                        }
+                        DEF JOINT_3 Transform {
+                          translation 0 0.16 0
+                          children [
+                            Shape {
+                              appearance Appearance {
+                                material Material {
+                                  diffuseColor 0.8 0.0120863 0.0901799
+                                }
+                              }
+                              geometry Sphere {
+                                radius 0.1
+                              }
+                            }
+                            DEF LINK_3 Transform {
+                              translation 0 0.16 0
+                              children Shape {
+                                appearance Appearance {
+                                  material Material {
+                                    diffuseColor 0.0146277 0.8 0.529106
+                                  }
+                                }
+                                geometry Cylinder {
+                                  radius 0.08
+                                  height 0.2
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
